@@ -1,3 +1,22 @@
+@font-face {
+    font-family: HankenGrotesk;
+    src: url(../fonts/static/HankenGrotesk-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: HankenGrotesk;
+    src: url(../fonts/static/HankenGrotesk-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: HankenGrotesk;
+    src: url(../fonts/static/HankenGrotesk-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,13 +24,15 @@
 }
 
 body {
-    background-color:#e2e2e2;
+    background-color:#fff;
+    font-family: 'HankenGrotesk';
+    font-weight: normal;
 }
 
 
 
 .content-top {
-    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    background-image: linear-gradient(to bottom, hsla(209, 100%, 50%, 0.616), hsl(209, 100%, 50%));
     color: #e2e2e2;
 
     display: flex;
@@ -40,7 +61,7 @@ body {
 
     font-size: 36px;
 
-    background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.151), hsla(241, 81%, 54%, 0.212));
+    background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.185), hsla(209, 100%, 50%, 0));
     border-radius: 50%;
 }
 
@@ -51,7 +72,7 @@ body {
 
 .content-top > .score > .score-total {
     color: #c5c5c5;
-    font-size: 16px;
+    font-size: small;
 }
 
 .content-top .message-result {
@@ -65,11 +86,67 @@ body {
 
 .content-top .message-result > h2 {
     color: #fff;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: normal;
     
 }
 
 .content-top .message-result > p {
     margin-top: 5px;
+    font-size: small;
+}
+
+.content-bottom {
+    padding: 20px;
+}
+
+.content-bottom > h2 {
+    font-size: 16px;
+}
+
+.content-bottom .tests {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.content-bottom .tests .result-test {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f6f69f;
+    border-radius: 8px;
+    margin: 5px 0px;
+    padding: 10px;
+}
+
+.redd {
+    color: hsl(0, 100%, 67%);
+}
+
+.yelloww {
+    color: hsl(39, 100%, 56%);
+}
+
+.greenn {
+    color: hsl(166, 100%, 37%);
+}
+
+.bluee {
+    color: hsl(234, 85%, 45%);
+}
+
+.content-bottom .tests .result-test img {
+    margin-right: 10px;
+}
+
+.btn-continue {
+    width: 280px;
+    height: 40px;
+    background-color: hsl(224, 30%, 27%);
+    color: #fff;   
+    border: none;
+    border-radius: 25px; 
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
 }
