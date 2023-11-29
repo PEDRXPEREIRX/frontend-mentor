@@ -119,22 +119,6 @@ body {
     padding: 10px;
 }
 
-.redd {
-    color: hsl(0, 100%, 67%);
-}
-
-.yelloww {
-    color: hsl(39, 100%, 56%);
-}
-
-.greenn {
-    color: hsl(166, 100%, 37%);
-}
-
-.bluee {
-    color: hsl(234, 85%, 45%);
-}
-
 .content-bottom .tests .result-test img {
     margin-right: 10px;
 }
@@ -158,5 +142,35 @@ body {
 }
 
 .btn-continue:hover {
-    background-color: rgb(84, 104, 156);
+    background-color: hsl(209, 100%, 50%);
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+@media screen and (min-width: 379px) {
+    body {
+        background-color: #e2e2e2;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+
+    .container {
+        display: flex;
+        width: 600px;
+        height: 400px;
+
+        background-color: #fff;
+        border-radius: 25px;
+        overflow: hidden;
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .content-top {
+        border-radius: 25px;
+    }
 }
